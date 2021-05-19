@@ -7,7 +7,7 @@ from selenium import webdriver
 def pytest_addoption(parser):
     parser.addoption("--browser", action="store", default="chrome", choices=["chrome", "firefox", "opera", "ie"])
     parser.addoption("--url", action="store", default="http://localhost")
-    parser.addoption("--drivers", action="store", default=os.path.expanduser("D:\drivers"))
+    parser.addoption("--drivers", action="store", default=os.path.expanduser("D:\\drivers"))
     parser.addoption("--headless", action="store_true", help="Run headless")
 
 
